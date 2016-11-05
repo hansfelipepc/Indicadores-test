@@ -1,19 +1,41 @@
 package com.hans.indicadores.model;
 
-import java.util.ArrayList;
-
-/**
- * Created by Felipe (04-11-2016).
- */
-
 public class IndicadoresResponse {
-    private ArrayList<Indicador> uf;
 
-    public ArrayList<Indicador> getUf() {
+    private String version;
+    private String autor;
+    private String fecha;
+    private Indicador uf;
+
+    public String getVersion() {
+        return version;
+    }
+
+    public void setVersion(String version) {
+        this.version = version;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+    public Indicador getUf() {
         return uf;
     }
 
-    public void setUf(ArrayList<Indicador> uf) {
+    public void setUf(Indicador uf) {
         this.uf = uf;
     }
 }

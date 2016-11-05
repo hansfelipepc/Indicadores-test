@@ -42,11 +42,8 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<IndicadoresResponse> call, Response<IndicadoresResponse> response) {
                 if (response.isSuccessful()){
                     IndicadoresResponse indicadoresResponse = response.body();
-                    ArrayList<Indicador> listaIndicador = indicadoresResponse.getUf();
-                    for (int i = 0; i < listaIndicador.size(); i++) {
-                        Indicador ind = listaIndicador.get(i);
-                        Log.i(TAG, "Indicador: " + ind.getNombre() );
-                    }
+                    Indicador uf = indicadoresResponse.getUf();
+                    Log.v(TAG, "uf "+uf.toString());
                 }else{
                     Log.e(TAG, "onResponse: " + response.errorBody());
                 }

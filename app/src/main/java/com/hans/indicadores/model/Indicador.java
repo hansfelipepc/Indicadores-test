@@ -6,7 +6,10 @@ package com.hans.indicadores.model;
 
 public class Indicador {
 
+    private String codigo;
     private String nombre;
+    private String unidad_medida;
+    private String fecha;
     private double valor;
 
     public double getValor() {
@@ -23,5 +26,40 @@ public class Indicador {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getUnidad_medida() {
+        return unidad_medida;
+    }
+
+    public void setUnidad_medida(String unidad_medida) {
+        this.unidad_medida = unidad_medida;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+    @Override
+    public String toString() {
+        return "Indicador{" +
+                "codigo='" + codigo + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", unidad_medida='" + unidad_medida + '\'' +
+                ", fecha='" + fecha + '\'' +
+                ", valor=" + valor +
+                '}';
     }
 }

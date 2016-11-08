@@ -13,5 +13,15 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/tvUf"/>
+    <TextView
+        android:layout_below="@+id/tvUf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDolar"/>
+    <TextView
+        android:layout_below="@+id/tvDolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUtm"/>
 </RelativeLayout>

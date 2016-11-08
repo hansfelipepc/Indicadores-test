@@ -6,10 +6,7 @@ package com.hans.indicadores.model;
 
 public class Indicador {
 
-    private String codigo;
-    private String nombre;
-    private String unidad_medida;
-    private String fecha;
+    private String codigo, nombre, unidad_medida, fecha;
     private double valor;
 
     public double getValor() {

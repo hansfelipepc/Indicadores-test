@@ -2,10 +2,8 @@ package com.hans.indicadores.model;
 
 public class IndicadoresResponse {
 
-    private String version;
-    private String autor;
-    private String fecha;
-    private Indicador uf;
+    private String version, autor, fecha;
+    private Indicador uf, dolar, utm;
 
     public String getVersion() {
         return version;
@@ -37,5 +35,21 @@ public class IndicadoresResponse {
 
     public void setUf(Indicador uf) {
         this.uf = uf;
+    }
+
+    public Indicador getDolar() {
+        return dolar;
+    }
+
+    public void setDolar(Indicador dolar) {
+        this.dolar = dolar;
+    }
+
+    public Indicador getUtm() {
+        return utm;
+    }
+
+    public void setUtm(Indicador utm) {
+        this.utm = utm;
     }
 }
